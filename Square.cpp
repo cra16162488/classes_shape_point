@@ -1,7 +1,5 @@
 #include "Square.h"
 
-#include <iostream>
-
 Square::Square(std::vector<Point*> points)
 : Rectangle(points)
 {

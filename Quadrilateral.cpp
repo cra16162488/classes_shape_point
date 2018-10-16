@@ -31,22 +31,6 @@ std::vector<Point*> Quadrilateral::getPoints()
     return m_points;
 }
 
-float Quadrilateral::getPerimeter()
-{
-    float c1, c2, c3, c4;
-
-    c1 = sqrt(pow(m_points[0]->getY()-m_points[1]->getY(), 2) +
-              pow(m_points[0]->getX()-m_points[1]->getX(), 2));
-    c2 = sqrt(pow(m_points[1]->getY()-m_points[2]->getY(), 2) +
-              pow(m_points[1]->getX()-m_points[2]->getX(), 2));
-    c3 = sqrt(pow(m_points[2]->getY()-m_points[3]->getY(), 2) +
-              pow(m_points[2]->getX()-m_points[3]->getX(), 2));
-    c4 = sqrt(pow(m_points[3]->getY()-m_points[0]->getY(), 2) +
-              pow(m_points[3]->getX()-m_points[0]->getX(), 2));
-
-    return c1 + c2 + c3 + c4; 
-}
-
 float Quadrilateral::getArea()
 {
     // from: https://www.mathopenref.com/coordpolygonarea.html

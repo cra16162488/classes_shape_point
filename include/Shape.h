@@ -14,7 +14,7 @@ public:
     int    getPointCount();
 
     virtual float getArea()      = 0;
-    virtual float getPerimeter() = 0;
+    float   getPerimeter();
 
 protected:
     std::vector<Point*> m_points;

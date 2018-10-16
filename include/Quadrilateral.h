@@ -17,7 +17,6 @@ public:
 
     bool isRectangle();
 
-    float getPerimeter();
     float getArea();
 };
 

@@ -12,6 +12,18 @@ void Shape::setPoint(int index, Point *point)
     }
 }
 
+
+float Shape::getPerimeter()
+{
+    float perimeter = 0;
+
+    for (int i = 0; i < m_points.size(); i++)
+        perimeter += m_points[i]->getDistance(m_points[(i+1) % m_points.size()]);
+
+    return perimeter;
+
+}
+
 Point *Shape::getPoint(int index)
 {
     return m_points[index];

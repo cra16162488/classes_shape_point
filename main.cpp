@@ -29,7 +29,7 @@ int main(){
         std::cout << "Quadrilateral perimeter : " << quadrilateral.getPerimeter() << std::endl;
         std::cout << std::endl;
 
-        Quadrilateral rectangle(p1, p2, p3, p4);
+        Rectangle rectangle(p1, p2, p3, p4);
         std::cout << "Rectangle area : "      << rectangle.getArea()      << std::endl;
         std::cout << "Rectangle perimeter : " << rectangle.getPerimeter() << std::endl;
         std::cout << std::endl;
@@ -41,7 +41,7 @@ int main(){
     }
     catch(const std::exception& e)
     {
-        std::cerr << e.what() << '\n';
+        std::cerr << e.what() << std::endl;
     }
 
     return 0;

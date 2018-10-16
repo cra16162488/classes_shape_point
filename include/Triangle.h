@@ -21,7 +21,6 @@ public:
 
     bool isRightTriangle();
 
-    float getPerimeter();
     float getArea();
 };
 
